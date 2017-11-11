@@ -1,0 +1,28 @@
+---------------------------------------------------------------
+[ 2017-10-17T21:01:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Products/AD-15.jpg
+[ info ] www.pluralisticshop.com/index/Products/AD-15.jpg [运行时间：0.003875s][吞吐率：258.06req/s] [内存消耗：402.18kb] [文件加载：41]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Products',
+    2 => 'AD-15.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=d5749vt4riibieivvqgdhc0v27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

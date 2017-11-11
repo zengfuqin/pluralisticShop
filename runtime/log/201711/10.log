@@ -1,0 +1,1411 @@
+---------------------------------------------------------------
+[ 2017-11-10T09:49:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/orders/orders.html
+[ info ] www.pluralisticshop.com/index/orders/orders.html [运行时间：0.149657s][吞吐率：6.68req/s] [内存消耗：1,207.31kb] [文件加载：62]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'orders',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Orders->orders[ /var/www/html/pluralisticShop/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/orders/orders.html [ array (
+  0 => 'account',
+  1 => 'classAname',
+  2 => 'res',
+  3 => 'useraddress',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008085s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.006709s ]
+[ sql ] [ SQL ] SELECT * FROM `think_shopcart` `a` INNER JOIN `think_product` `w` ON `a`.`productid`=`w`.`id` WHERE  `productid` = 0 [ RunTime:0.004397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_useraddress` [ RunTime:0.001310s ]
+[ sql ] [ SQL ] SELECT * FROM `think_useraddress` WHERE  `user_id` IS NULL [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.001108s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000359s ]
+---------------------------------------------------------------
+[ 2017-11-10T09:49:54+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/fl_img_12.png
+[ info ] www.pluralisticshop.com/static/index/images/fl_img_12.png [运行时间：0.008093s][吞吐率：123.56req/s] [内存消耗：399.87kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:49:54+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/cd_img_11.png
+[ info ] www.pluralisticshop.com/static/index/images/cd_img_11.png [运行时间：0.009789s][吞吐率：102.16req/s] [内存消耗：451.48kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:50:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index/orders/orders.html
+[ info ] www.pluralisticshop.com/index/orders/orders.html [运行时间：0.022976s][吞吐率：43.52req/s] [内存消耗：1,087.64kb] [文件加载：60]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'orders',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Orders->orders[ /var/www/html/pluralisticShop/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/orders/orders.html [ array (
+  0 => 'account',
+  1 => 'classAname',
+  2 => 'res',
+  3 => 'useraddress',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001766s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.001008s ]
+[ sql ] [ SQL ] SELECT * FROM `think_shopcart` `a` INNER JOIN `think_product` `w` ON `a`.`productid`=`w`.`id` WHERE  `productid` = 0 [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_useraddress` [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `think_useraddress` WHERE  `user_id` IS NULL [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000137s ]
+---------------------------------------------------------------
+[ 2017-11-10T09:50:08+08:00 ] 127.0.0.1 127.0.0.1 GET /index/
+[ info ] www.pluralisticshop.com/index/ [运行时间：0.022823s][吞吐率：43.82req/s] [内存消耗：1,078.75kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/pluralisticShop/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/index/index.html [ array (
+  0 => 'account',
+  1 => 'dalunbo_img_srcn',
+  2 => 'xiaolunbo_img_srcn',
+  3 => 'nvzhuangpinp_img_srcn',
+  4 => 'nanzhuangpinp_img_srcn',
+  5 => 'waizhuangpinp_img_srcn',
+  6 => 'guozhuangpinp_img_srcn',
+  7 => 'classAname',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000497s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_picture` [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SELECT * FROM `think_picture` [ RunTime:0.001472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000100s ]
+---------------------------------------------------------------
+[ 2017-11-10T09:50:08+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/cd_img_11.png
+[ info ] www.pluralisticshop.com/static/index/images/cd_img_11.png [运行时间：0.005048s][吞吐率：198.10req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:50:08+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/fl_img_12.png
+[ info ] www.pluralisticshop.com/static/index/images/fl_img_12.png [运行时间：0.008051s][吞吐率：124.21req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:50:31+08:00 ] 127.0.0.1 127.0.0.1 GET /index/shopcart/shopcart.html
+[ info ] www.pluralisticshop.com/index/shopcart/shopcart.html [运行时间：0.052583s][吞吐率：19.02req/s] [内存消耗：988.59kb] [文件加载：62]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shopcart',
+    2 => 'shopcart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Shopcart->shopcart[ /var/www/html/pluralisticShop/application/index/controller/Shopcart.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/shopcart/shop_cart.html [ array (
+  0 => 'account',
+  1 => 'classAname',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002918s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.001675s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000261s ]
+[ error ] [8]未定义变量: list[/var/www/html/pluralisticShop/runtime/temp/7e69fb08d562ec5e192a719c1f73b96f.php:238]
+---------------------------------------------------------------
+[ 2017-11-10T09:50:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index/
+[ info ] www.pluralisticshop.com/index/ [运行时间：0.020329s][吞吐率：49.19req/s] [内存消耗：1,074.64kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/pluralisticShop/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/index/index.html [ array (
+  0 => 'account',
+  1 => 'dalunbo_img_srcn',
+  2 => 'xiaolunbo_img_srcn',
+  3 => 'nvzhuangpinp_img_srcn',
+  4 => 'nanzhuangpinp_img_srcn',
+  5 => 'waizhuangpinp_img_srcn',
+  6 => 'guozhuangpinp_img_srcn',
+  7 => 'classAname',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000362s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_picture` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT * FROM `think_picture` [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.001403s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000284s ]
+---------------------------------------------------------------
+[ 2017-11-10T09:50:47+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/index.html
+[ info ] www.pluralisticshop.com/index/login/index.html [运行时间：0.009675s][吞吐率：103.36req/s] [内存消耗：480.92kb] [文件加载：49]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /var/www/html/pluralisticShop/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/login/login.html [ array (
+  0 => 'account',
+  1 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:50:51+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/index.html
+[ info ] www.pluralisticshop.com/index/login/index.html [运行时间：0.012162s][吞吐率：82.22req/s] [内存消耗：490.56kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://www.pluralisticshop.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.pluralisticshop.com/index/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+  'account' => '123456',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /var/www/html/pluralisticShop/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/login/login.html [ array (
+  0 => 'account',
+  1 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:51:13+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/ptlogin.html
+[ info ] www.pluralisticshop.com/index/login/ptlogin.html [运行时间：0.013205s][吞吐率：75.73req/s] [内存消耗：761.47kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'ptlogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'accept' => '*/*',
+  'origin' => 'http://www.pluralisticshop.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.pluralisticshop.com/index/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+  'account' => '123456',
+  'password' => '123456',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Login->ptLogin[ /var/www/html/pluralisticShop/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000942s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_registered` [ RunTime:0.001463s ]
+[ sql ] [ SQL ] SELECT * FROM `think_registered` WHERE  `account` = '123456'  AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.000968s ]
+---------------------------------------------------------------
+[ 2017-11-10T09:51:13+08:00 ] 127.0.0.1 127.0.0.1 GET /index/
+[ info ] www.pluralisticshop.com/index/ [运行时间：0.027179s][吞吐率：36.79req/s] [内存消耗：1,075.58kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/index/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/pluralisticShop/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/index/index.html [ array (
+  0 => 'account',
+  1 => 'dalunbo_img_srcn',
+  2 => 'xiaolunbo_img_srcn',
+  3 => 'nvzhuangpinp_img_srcn',
+  4 => 'nanzhuangpinp_img_srcn',
+  5 => 'waizhuangpinp_img_srcn',
+  6 => 'guozhuangpinp_img_srcn',
+  7 => 'classAname',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000566s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_picture` [ RunTime:0.001425s ]
+[ sql ] [ SQL ] SELECT * FROM `think_picture` [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.001092s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000206s ]
+---------------------------------------------------------------
+[ 2017-11-10T09:51:13+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/cd_img_11.png
+[ info ] www.pluralisticshop.com/static/index/images/cd_img_11.png [运行时间：0.004212s][吞吐率：237.42req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:51:13+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/fl_img_12.png
+[ info ] www.pluralisticshop.com/static/index/images/fl_img_12.png [运行时间：0.003758s][吞吐率：266.10req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:51:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index/shopcart/shopcart.html
+[ info ] www.pluralisticshop.com/index/shopcart/shopcart.html [运行时间：0.034675s][吞吐率：28.84req/s] [内存消耗：1,044.14kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shopcart',
+    2 => 'shopcart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Shopcart->shopcart[ /var/www/html/pluralisticShop/application/index/controller/Shopcart.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/shopcart/shop_cart.html [ array (
+  0 => 'account',
+  1 => 'list',
+  2 => 'classAname',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003488s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.001583s ]
+[ sql ] [ SQL ] SELECT * FROM `think_shopcart` `a` INNER JOIN `think_product` `w` ON `a`.`productid`=`w`.`id` WHERE  `userid` = 123456 [ RunTime:0.002160s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000250s ]
+---------------------------------------------------------------
+[ 2017-11-10T09:51:48+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/cd_img_11.png
+[ info ] www.pluralisticshop.com/static/index/images/cd_img_11.png [运行时间：0.008793s][吞吐率：113.73req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:51:48+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/fl_img_12.png
+[ info ] www.pluralisticshop.com/static/index/images/fl_img_12.png [运行时间：0.003933s][吞吐率：254.26req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:51:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index/orders/orders.html?id=1-2-3
+[ info ] www.pluralisticshop.com/index/orders/orders.html?id=1-2-3 [运行时间：0.026927s][吞吐率：37.14req/s] [内存消耗：1,112.33kb] [文件加载：60]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'orders',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/index/shopcart/shopcart.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1-2-3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Orders->orders[ /var/www/html/pluralisticShop/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/orders/orders.html [ array (
+  0 => 'account',
+  1 => 'classAname',
+  2 => 'res',
+  3 => 'useraddress',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000512s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SELECT * FROM `think_shopcart` `a` INNER JOIN `think_product` `w` ON `a`.`productid`=`w`.`id` WHERE  `productid` = 1 [ RunTime:0.001082s ]
+[ sql ] [ SQL ] SELECT * FROM `think_shopcart` `a` INNER JOIN `think_product` `w` ON `a`.`productid`=`w`.`id` WHERE  `productid` = 2 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT * FROM `think_shopcart` `a` INNER JOIN `think_product` `w` ON `a`.`productid`=`w`.`id` WHERE  `productid` = 3 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_useraddress` [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `think_useraddress` WHERE  `user_id` = 123456 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000156s ]
+---------------------------------------------------------------
+[ 2017-11-10T09:51:53+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/cd_img_11.png
+[ info ] www.pluralisticshop.com/static/index/images/cd_img_11.png [运行时间：0.004054s][吞吐率：246.67req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:51:53+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/fl_img_12.png
+[ info ] www.pluralisticshop.com/static/index/images/fl_img_12.png [运行时间：0.004206s][吞吐率：237.76req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:52:24+08:00 ] 127.0.0.1 127.0.0.1 GET /index/orders/orders.html?id=1-2-3
+[ info ] www.pluralisticshop.com/index/orders/orders.html?id=1-2-3 [运行时间：0.032113s][吞吐率：31.14req/s] [内存消耗：1,116.00kb] [文件加载：60]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'orders',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/index/shopcart/shopcart.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1-2-3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Orders->orders[ /var/www/html/pluralisticShop/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/orders/orders.html [ array (
+  0 => 'account',
+  1 => 'classAname',
+  2 => 'res',
+  3 => 'useraddress',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002384s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_shopcart` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `think_shopcart` `a` INNER JOIN `think_product` `w` ON `a`.`productid`=`w`.`id` WHERE  `productid` = 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `think_shopcart` `a` INNER JOIN `think_product` `w` ON `a`.`productid`=`w`.`id` WHERE  `productid` = 2 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `think_shopcart` `a` INNER JOIN `think_product` `w` ON `a`.`productid`=`w`.`id` WHERE  `productid` = 3 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_useraddress` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `think_useraddress` WHERE  `user_id` = 123456 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.005247s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000131s ]
+---------------------------------------------------------------
+[ 2017-11-10T09:52:24+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/cd_img_11.png
+[ info ] www.pluralisticshop.com/static/index/images/cd_img_11.png [运行时间：0.004263s][吞吐率：234.57req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T09:52:24+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/fl_img_12.png
+[ info ] www.pluralisticshop.com/static/index/images/fl_img_12.png [运行时间：0.004417s][吞吐率：226.40req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T10:01:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index/
+[ info ] www.pluralisticshop.com/index/ [运行时间：0.033391s][吞吐率：29.95req/s] [内存消耗：1,075.16kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/pluralisticShop/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/index/index.html [ array (
+  0 => 'account',
+  1 => 'dalunbo_img_srcn',
+  2 => 'xiaolunbo_img_srcn',
+  3 => 'nvzhuangpinp_img_srcn',
+  4 => 'nanzhuangpinp_img_srcn',
+  5 => 'waizhuangpinp_img_srcn',
+  6 => 'guozhuangpinp_img_srcn',
+  7 => 'classAname',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000615s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_picture` [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SELECT * FROM `think_picture` [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000266s ]
+---------------------------------------------------------------
+[ 2017-11-10T10:01:51+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/cd_img_11.png
+[ info ] www.pluralisticshop.com/static/index/images/cd_img_11.png [运行时间：0.004208s][吞吐率：237.65req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T10:01:51+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/fl_img_12.png
+[ info ] www.pluralisticshop.com/static/index/images/fl_img_12.png [运行时间：0.002890s][吞吐率：346.01req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T10:01:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index/product/productlist.html
+[ info ] www.pluralisticshop.com/index/product/productlist.html [运行时间：0.049856s][吞吐率：20.06req/s] [内存消耗：1,052.69kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'product',
+    2 => 'productlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Product->productList[ /var/www/html/pluralisticShop/application/index/controller/Product.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/product/product_list.html [ array (
+  0 => 'account',
+  1 => 'productList',
+  2 => 'classAname',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000940s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_product` [ RunTime:0.002135s ]
+[ sql ] [ SQL ] SELECT * FROM `think_product` WHERE  `status` >= 0 [ RunTime:0.001528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.001914s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000362s ]
+---------------------------------------------------------------
+[ 2017-11-10T10:01:53+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/cd_img_11.png
+[ info ] www.pluralisticshop.com/static/index/images/cd_img_11.png [运行时间：0.004643s][吞吐率：215.37req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T10:01:53+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/fl_img_12.png
+[ info ] www.pluralisticshop.com/static/index/images/fl_img_12.png [运行时间：0.004447s][吞吐率：224.86req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T10:01:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/product/productdetailed.html?id=1
+[ info ] www.pluralisticshop.com/index/product/productdetailed.html?id=1 [运行时间：0.036432s][吞吐率：27.45req/s] [内存消耗：1,058.32kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'product',
+    2 => 'productdetailed',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/index/product/productlist.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Product->productDetailed[ /var/www/html/pluralisticShop/application/index/controller/Product.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/pluralisticShop/public/../application/index/view/product/Product_Detailed.html [ array (
+  0 => 'account',
+  1 => 'product',
+  2 => 'classAname',
+  3 => 'img_srcn',
+  4 => 'size',
+  5 => 'color',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000730s ] mysql:host=127.0.0.1;dbname=lastproject;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_product` [ RunTime:0.001306s ]
+[ sql ] [ SQL ] SELECT * FROM `think_product` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_product_spec` [ RunTime:0.001081s ]
+[ sql ] [ SQL ] SELECT * FROM `think_product_spec` WHERE  `product_id` = 1001 LIMIT 1 [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_category` [ RunTime:0.001440s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 7 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 8 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 2 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 9 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 10 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 11 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 4 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 15 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 16 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 17 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 5 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 18 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 19 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 20 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 6 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 21 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 22 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `think_category` WHERE  `status` = 1  AND `parent_id` = 23 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2017-11-10T10:01:54+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/fl_img_12.png
+[ info ] www.pluralisticshop.com/static/index/images/fl_img_12.png [运行时间：0.003115s][吞吐率：321.03req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-10T10:01:54+08:00 ] 127.0.0.1 127.0.0.1 GET /static/index/images/cd_img_11.png
+[ info ] www.pluralisticshop.com/static/index/images/cd_img_11.png [运行时间：0.003258s][吞吐率：306.94req/s] [内存消耗：396.15kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/pluralisticShop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.pluralisticshop.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.pluralisticshop.com/static/index/css/common.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=89s963sd8114enkdup2p5un2l7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,73 @@
+#commentBox{
+	border:1px solid red;
+	width:1199px;
+	height:800px;
+	position:relative;
+}
+#commentNeiBox{
+	background: yellow;
+	width:900px;
+	height: 800px;
+	margin:0 auto;
+}
+#numBox{
+	width: 900px;
+	height: 28px;
+	border: 1px solid #f6f5f1;
+	border-bottom: 5px solid #f6f5f1;
+}
+#num{
+	width: 179px;height: 28px;
+	line-height: 28px;
+	font-size: 15px;
+	font-weight: 700;
+	border-top: 5px solid #b41a1a;
+	background: #f6f5f1;
+	text-align: center;
+	color: #363535;
+}
+#num span{
+	color: #284ca5;
+}
+#xingPing{
+	width: 900px;
+	height: 30px;
+	padding-top: 10px;
+	border: 1px solid #f6f5f1;
+}
+#star{position:relative;width:600px;height:24px;color:#666;font:12px/1.5 Arial;}
+#star span{float:left;display:inline;height:19px;line-height:19px;white-space:pre;}
+#star ul{float:left;display:inline;height:19px;line-height:19px;}
+#star ul{margin:0 10px;}
+#star li{float:left;width:24px;cursor:pointer;text-indent:-9999px;background:url(/static/index/images/star.png) no-repeat;}
+#star strong{color:#f60;padding-left:10px;}
+#star li.on{background-position:0 -28px;}
+#star p{position:absolute;top:20px;width:159px;height:60px;display:none;background:url(/static/index/images/icon.gif) no-repeat;padding:7px 10px 0;}
+#star p em{color:#f60;display:block;font-style:normal;}
+
+.comTextBox{
+	width:900px;
+	height: 327px;
+	background: #f6f6f6;
+}
+.text{
+	padding: 20px;
+	text-indent: 20px;
+	font-size: 20px;
+	font-weight: 900px;
+}
+.shiyong{
+	/*padding-left:60px;*/
+	width:140px;
+	height: 20px;
+
+	font-size: 15px;
+	text-align: center;
+	background: green;
+}
+.neiRong{
+	margin-top: 10px;
+	margin-left: 70px;
+	width:500px;
+	height: 100px;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/static/index/css/common.css" rel="stylesheet" tyle="text/css" />
+<link href="/static/index/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/static/index/fonts/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="/static/index/css/component.css" rel="stylesheet">
+<link href="/static/index/css/comment.css" rel="stylesheet">
+<script src="/static/index/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+<script src="/static/index/js/jqzoom.js" type="text/javascript"></script>
+<script src="/static/index/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="/static/index/js/common_js.js" type="text/javascript"></script>
+<script src="/static/index/js/footer.js" type="text/javascript"></script>
+<script src="/static/index/js/jquery.jumpto.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+window.onload = function (){
+	var oStar = document.getElementById("star");
+	var aLi = oStar.getElementsByTagName("li");
+	var oUl = oStar.getElementsByTagName("ul")[0];
+	var oSpan = oStar.getElementsByTagName("span")[1];
+	var oP = oStar.getElementsByTagName("p")[0];
+	var i = iScore = iStar = 0;
+	var aMsg = [
+				"很不满意|差得太离谱，与卖家描述的严重不符，非常不满",
+				"不满意|部分有破损，与卖家描述的不符，不满意",
+				"一般|质量一般，没有卖家描述的那么好",
+				"满意|质量不错，与卖家描述的基本一致，还是挺满意的",
+				"非常满意|质量非常好，与卖家描述的完全一致，非常满意"
+				]
+	for (i = 1; i <= aLi.length; i++){
+		aLi[i - 1].index = i;
+		//鼠标移过显示分数
+		aLi[i - 1].onmouseover = function (){
+			fnPoint(this.index);
+			//浮动层显示
+			oP.style.display = "block";
+			//计算浮动层位置
+			oP.style.left = oUl.offsetLeft + this.index * this.offsetWidth - 104 + "px";
+			//匹配浮动层文字内容
+			oP.innerHTML = "<em><b>" + this.index + "</b> 分 " + aMsg[this.index - 1].match(/(.+)\|/)[1] + "</em>" + aMsg[this.index - 1].match(/\|(.+)/)[1]
+		};
+		//鼠标离开后恢复上次评分
+		aLi[i - 1].onmouseout = function (){
+			fnPoint();
+			//关闭浮动层
+			oP.style.display = "none"
+		};
+		//点击后进行评分处理
+		aLi[i - 1].onclick = function (){
+			iStar = this.index;
+			oP.style.display = "none";
+			oSpan.innerHTML = "<strong>" + (this.index) + " 分</strong> (" + aMsg[this.index - 1].match(/\|(.+)/)[1] + ")"
+		}
+	}
+	//评分处理
+	function fnPoint(iArg){
+		//分数赋值
+		iScore = iArg || iStar;
+		for (i = 0; i < aLi.length; i++) aLi[i].className = i < iScore ? "on" : "";	
+	}
+};
+</script>
+<title>产品名称详细页</title>
+</head>
+
+<body>
+{include file="public/header,public/nav"}
+</div>
+<!--产品详细页-->
+<div class="clearfix  Inside_pages" style="border:1px solid green">
+ <!--位置-->
+ <div id="goodsInfo">
+ <div class="Location_link">
+  <em></em><a href="#">进口食品、进口牛</a>  &lt;   <a href="#">进口饼干/糕点</a>   &lt;   <a href="#">产品名称</a>
+ </div>
+ <!--产品详细介绍-->
+ <div class="Details_style clearfix" style="border:1px solid yellow">
+  <div class="mod_picfold clearfix">
+    <div class="clearfix" id="detail_main_img">
+	 <div class="layout_wrap preview">
+     <div id="vertical" class="bigImg">
+		<img src="/static/index/mid/01.jpg" width="" height="" alt="" id="midimg" />
+		<div style="display:none;" id="winSelector"></div>
+	</div>
+     <div class="smallImg">
+		<div class="scrollbutton smallImgUp disabled">&lt;</div>
+		<div id="imageMenu">
+			<ul>
+				<li><img src="/static/index/small/01.jpg" width="68" height="68" alt="洋妞"/></li>
+				<li><img src="/static/index/small/02.jpg" width="68" height="68" alt="洋妞"/></li>
+				<li><img src="/static/index/small/03.jpg" width="68" height="68" alt="洋妞"/></li>
+				<li><img src="/static/index/small/04.jpg" width="68" height="68" alt="洋妞"/></li>
+				<li><img src="/static/index/small/05.jpg" width="68" height="68" alt="洋妞"/></li>
+				<li><img src="/static/index/small/06.jpg" width="68" height="68" alt="洋妞"/></li>
+                <li><img src="/static/index/small/07.jpg" width="68" height="68" alt="洋妞"/></li>
+			</ul>
+		</div>
+		<div class="scrollbutton smallImgDown">&gt;</div>
+	</div><!--smallImg end-->	
+	<div id="bigView" style="display:none;"><div><img width="800" height="800" alt="" src="" /></div></div>
+	 </div>
+	</div>
+		 <div class="Sharing">
+	 <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1441079683326"><a href="#" class="bds_more" data-cmd="more">分享到：</a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+  <!--收藏-->
+	  
+	 </div>
+   </div> 
+   <!--信息样式-->
+    <div class="textInfo">
+    <form action="javascript:addToCart(97)" name="ECS_FORMBUY" id="ECS_FORMBUY">
+	  <div class="title"><h1>Mixx 炼乳奶酪饼干 600g 马来西亚进口</h1><p>进口饼干糕点 西式糕点 休闲轻松</p></div>
+	  <div class="mod_detailInfo_priceSales">
+		  <div class="margins">
+		 	 <div class="Price clearfix"><label>价格</label><span>¥10.90</span></div>
+		  	<div class="Activity clearfix"><label>配送</label><span>快递：0.00</span></div>
+	       		 <div class="p_Size clearfix"><label>评价</label><span>fksjd</span></div>
+		  </div>
+	 </div>
+	 <div class="buyinfo" id="detail_buyinfo" style="background:  #fdfbfa;color:#8d7664;">
+	 	<dt style="white-space:pre;font-size:18px;"> 类型:dsfjhjksdfhljk</dt>
+	 	<dd style="padding-left:40px;padding-top:20px;color:#666;">现在查看的是 您所购买商品的信息</dd>
+	 	<dd style="padding-left:40px;padding-top:20px;color:#666;">于2017年7月16日下单购买了此商品</dd>
+	 </div>
+	</form>
+  </div>
+  </div>
+  <!-- 评论 -->
+ <div id="commentBox">
+ 	<div id="commentNeiBox">
+ 		<div id="numBox">
+ 			<div id="num">累计评价 <span>99215</span></div>
+ 		</div>
+ 		<div id="xingPing">
+ 			<div id="star" >
+			<span>          您的评论很重要</span>
+			<ul>
+				<li><a href="javascript:;">1</a></li>
+				<li><a href="javascript:;">2</a></li>
+				<li><a href="javascript:;">3</a></li>
+				<li><a href="javascript:;">4</a></li>
+				<li><a href="javascript:;">5</a></li>
+			</ul>
+			<span></span>
+			<p></p>
+			</div><!--star end-->
+ 		</div>
+ 		<div class="comTextBox">
+ 			<div class="text">其他买家，需要你的建议哦！</div>
+ 			<div class="shiyong">使用感受:</div>
+ 			<textarea class="neiRong" maxlength="200" minlength="" placeholder="字数限定在200之间"></textarea>
+ 		</div>
+ 	</div>
+ </div>
+  
+   {include file="public/footer"}
+{include file="public/right"}
+ 
+
+
+</body>
+</html>

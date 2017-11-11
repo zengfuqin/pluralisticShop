@@ -1,0 +1,149 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:90:"/var/www/html/pluralisticShop/public/../application/admin/view/category/category-list.html";i:1509931609;}*/ ?>
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/static/admin/lib/html5shiv.js"></script>
+<script type="text/javascript" src="/static/admin/lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/static/admin/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="/static/admin/static/h-ui.admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/css/common.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="/static/admin/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<title>分类列表</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 分类管理 <span class="c-gray en">&gt;</span> 分类列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a class="btn btn-primary radius" data-title="添加分类" data-href="<?php echo url('Category/catadd'); ?>" onclick="Hui_admin_tab(this)" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加分类</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
+			<thead>
+				<tr class="text-c">
+					<th width="25"><input type="checkbox" name="" value=""></th>
+					<th width="80">ID</th>
+					<th >分类名称</th>
+					<th width="115">排序序号</th>
+					
+					<th width="200">新增时间</th>
+					
+					<th width="100">发布状态</th>
+					<th width="120">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+			<?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+				<tr class="text-c">
+					<td><input type="checkbox" value="" name=""></td>
+					<td id="id"><?php echo $vo['id']; ?></td>
+					<td  style="text-align: center;"><?php echo $vo['categorytitle']; ?></td>
+					<td class="listorder"><input  size="3" attr-id="<?php echo $vo['id']; ?>" name="listorder" value="<?php echo $vo['listorder']; ?>"></td>
+					<td><?php echo $vo['create_time']; ?></td>	
+
+					<td class="td-status"><a href="<?php echo url('category/status',['id'=>$vo['id'],'status'=>$vo['status']==1?0:1]); ?>" title="点击修改状态"><?php echo status($vo['status']); ?></a></td>
+
+					<td class="f-14 td-manage">
+						<a href="<?php echo url('category/index',['parent_id'=>$vo['id']]); ?>">获取子栏目</a>
+						<a style="text-decoration:none" href="<?php echo url('category/edit',['id'=>$vo['id']]); ?>" title="编辑">
+							<i class="Hui-iconfont">&#xe6df;</i>
+						</a> 
+						<a style="text-decoration:none" class="ml-5" onClick="category_del('<?php echo url('category/status',['id'=>$vo['id'],'status'=>-1]); ?>')" href="javascript:;" title="删除">
+							<i class="Hui-iconfont">&#xe6e2;</i>
+						</a>
+					</td>
+				</tr>
+			<?php endforeach; endif; else: echo "" ;endif; ?>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="cl pd-5 bg-1 bk-gray mt-20 pageCa"><?php echo $categorys->render(); ?></div>
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="/static/admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/static/admin/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="/static/admin/static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="/static/admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="/static/admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="/static/admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="/static/admin/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="/static/admin/js/public.js"></script>
+<script type="text/javascript">
+var scope={
+	'categorylist_url':"<?php echo url('Category/listorder'); ?>",
+}
+/*资讯-添加*/
+function article_add(title,url,w,h){
+	var index = layer.open({
+		type: 2,
+		title: title,
+		content: url
+	});
+	layer.full(index);
+}
+/*资讯-删除*/
+function article_del(obj,id){
+	layer.confirm('确认要删除吗？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: '',
+			dataType: 'json',
+			success: function(data){
+				$(obj).parents("tr").remove();
+				layer.msg('已删除!',{icon:1,time:1000});
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});
+		
+	});
+}
+/*资讯-下架*/
+function article_stop(obj,id,status){
+	layer.confirm('确认要下架吗？',function(index){
+		var url="<?php echo url('Category/status'); ?>";
+		var postData={'id':id,'status':status};
+		$.post(url,postData,function(result){
+			$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_start(this,id,0)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe603;</i></a>');
+			$(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已下架</span>');
+			$(obj).remove();
+			layer.msg('已下架!',{icon: 5,time:1000});
+			
+		},'json');
+	});
+}
+
+/*资讯-发布*/
+function article_start(obj,id,status){
+	layer.confirm('确认要发布吗？',function(index){
+		var url="<?php echo url('Category/status'); ?>";
+		var id=$("#id").text();
+		var postData={'id':id,'status':status};
+		$.post(url,postData,function(result){
+			$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_stop(this,id,1)" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>');
+			$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
+			$(obj).remove();
+			layer.msg('已发布!',{icon: 6,time:1000});
+			
+		},'json');
+	});
+}
+
+
+</script> 
+</body>
+</html>

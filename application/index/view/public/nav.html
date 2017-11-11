@@ -1,0 +1,71 @@
+<div id="Menu" class="clearfix">
+<div class="Inside_pages">
+  <div id="allSortOuterbox" class="display">
+    <div class="t_menu_img"></div>
+    <div class="Category"><a href="#"><em></em>所有产品分类</a></div>
+    <div class="hd_allsort_out_box_new" style="border:1px solid green;height:532px;">
+   <!--左侧栏目开始-->
+   <ul class="Menu_list" > 
+        {volist name="classAname" id="vo" key="k1"}
+        <li class="name">
+              <div class="Menu_name"><a href="#" >{$vo.categorytitle}</a> <span>&lt;</span></div>
+              <div class="link_name">
+                  <p>
+                      <a href="#">茅台</a><a href="#">五粮液</a><a href="#">郎酒</a><a  href="#">剑南春</a>
+                  </p>
+                  <p>
+                      <a href="#">酱香型</a><a href="#">四川</a><a href="#">贵州</a><a  href="#">养生酒</a>
+                  </p>
+              </div>
+              <div class="menv_Detail">
+                  <div class="cat_pannel clearfix">
+               <div class="hd_sort_list">
+                     {volist name="vo['level2']" id="level2"  key="k2"}
+                      <dl class="clearfix" data-tpc="1">
+                           <dt>{$level2.categorytitle}</dt>
+                           
+                           <dd>
+                            {volist name="level2['level3']" id="level3"  key="k3"}
+                                <a href="#">{$level3.categorytitle}</a>
+                                <!-- <php> <br> </php> -->
+                                  {if condition="$k3 == 8"} <br>
+                                  {elseif condition="$k3 == 16"}<br>
+                                  {/if}
+                            {/volist}
+                           </dd> 
+                      </dl>
+                    {/volist} 
+               </div>
+               <div class="Brands">
+                     <a href="#"><img src="" /></a>
+                     <a href="#"><img src="" /></a>
+                     <a href="#"><img src="" /></a>
+                     <a href="#"><img src="" /></a>
+                     <a href="#"><img src="" /></a>     
+                </div>
+              </div>
+      <!--品牌-->     
+            </div>     
+        </li>
+        {/volist}
+  </ul> 
+  </div>    
+  </div>
+  <script>$("#allSortOuterbox").slide({ titCell:".Menu_list li",mainCell:".menv_Detail",  });</script>
+  <!--菜单栏-->
+  <div class="Navigation" id="Navigation">
+     <ul class="Navigation_name">
+      <li><a href="{:url('index/Product/productList')}">美食</a></li>
+      <li><a href="#">美妆</a></li>
+      <li><a href="#">服饰</a></li>
+      <li><a href="#">产品预订</a></li>
+      <li><a href="#">积分商城</a></li>
+      <li><a href="#">礼品DIY</a></li>
+      <li><a href="#">区域合作</a></li>
+      <li><a href="#">联系我们</a></li>
+      <li><a href="#">购物车</a></li>
+     </ul>       
+    </div>
+  <script>$("#Navigation").slide({titCell:".Navigation_name li"});</script>   
+  </div>
+</div>
